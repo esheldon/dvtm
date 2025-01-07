@@ -133,7 +133,7 @@ static KeyBinding bindings[] = {
 	// { { MOD, '9',          }, { focusn,         { "9" }                     } },
 	{ { MOD, '\t',         }, { focuslast,      { NULL }                    } },
 	{ { MOD, 'q', 'q',     }, { quit,           { NULL }                    } },
-	{ { MOD, 'a',          }, { togglerunall,   { NULL }                    } },
+	// { { MOD, 'a',          }, { togglerunall,   { NULL }                    } },
 	{ { MOD, CTRL('L'),    }, { redraw,         { NULL }                    } },
 	{ { MOD, 'r',          }, { redraw,         { NULL }                    } },
 	{ { MOD, 'e',          }, { copymode,       { "dvtm-editor" }           } },
@@ -153,7 +153,8 @@ static KeyBinding bindings[] = {
 	{ { MOD, KEY_F(4),     }, { view,           { tags[3] }                 } },
 	{ { MOD, KEY_F(5),     }, { view,           { tags[4] }                 } },
 	{ { MOD, 'v', '0'      }, { view,           { NULL }                    } },
-	{ { MOD, 'v', '\t',    }, { viewprevtag,    { NULL }                    } },
+	//{ { MOD, 'v', '\t',    }, { viewprevtag,    { NULL }                    } },
+	{ { MOD, 'a'           }, { viewprevtag,    { NULL }                    } },
 	{ { MOD, 't', '0'      }, { tag,            { NULL }                    } },
 	TAGKEYS( '1',                              0)
 	TAGKEYS( '2',                              1)
